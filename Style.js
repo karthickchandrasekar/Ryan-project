@@ -64,7 +64,8 @@ const menu=document.getElementById("menu-item");
 
 bars.addEventListener("click",()=>{
    menu.style.display="block";
-   close.style.display="block";
+   close.style.display="grid";
+   close.style.justifyContent="end";
    bars.style.display="none";
    menu.style.width="auto";
    menu.style.height="120vh";

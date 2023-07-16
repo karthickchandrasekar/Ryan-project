@@ -39,23 +39,27 @@ header{
     grid-template-columns: 1fr 1fr;
     padding-top: 1em;
 }
-.menu{
-    display:grid;
-    justify-content: end;
-    margin-right:15px;
-    font-size: 28px;
-}
+
 #bars{
     display:none;
 }
 #close{
     display:none;
 }
+.menu{
+    display:grid;
+    justify-content: end;
+    margin-right:15px;
+    font-size: 28px;
+}
 .nav-list{
     display:grid;
     grid-template-columns: repeat(5,1fr);
     column-gap: 2px;
     
+}
+.menu{
+    display:none;
 }   
 .nav-item{
     list-style: none;
@@ -312,6 +316,10 @@ input[name=idea]{
     font-size: 6px;
 
 }
+.menu{
+    display:block;
+    
+}
 .container{
    margin:0 2px; 
 }
@@ -366,8 +374,10 @@ h2{
     transition:0.5s;
 }
 #bars{
-    display:block;
+    display:grid;
+    justify-content: end;
 }
+
 .nav-item{
     transition:0.5s;
     justify-content: end;
