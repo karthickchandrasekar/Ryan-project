@@ -4,6 +4,9 @@
 <title>Ryan Project</title>
 <link rel="stylesheet" href="./Style.css" >
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script defer src="Style.js"></script>
 </head>
@@ -59,11 +62,11 @@
             <h2><span>Projects</span></h2>
             </div>
             <div class="slider-arrow">
-            <i class="fa fa-chevron-left"></i>
-            <i class="fa fa-chevron-right"></i>
+            <i data-action="left" data-slider="projects" class="fa fa-chevron-left"></i>
+            <i data-action="right" data-slider="projects" class="fa fa-chevron-right"></i>
             </div>
             </div>
-         <div class="card-slider">
+         <div data-target="projects" class="card-slider">
             <div class="card">
                 <div class="card-img">
                 <img src="./resource/images/Projects (1).jpg" alt="project1">
@@ -176,11 +179,11 @@
         <h2><span>Blogs</span></h2>
         </div>
         <div class="slider-arrow">
-        <i class="fa fa-chevron-left"></i>
-        <i class="fa fa-chevron-right"></i>
+        <i  data-action="left" data-slider="blogs" class="fa fa-chevron-left"></i>
+        <i  data-action="right" data-slider="blogs" class="fa fa-chevron-right"></i>
         </div>
         </div>
-     <div class="card-slider">
+     <div data-target="blogs" class="card-slider">
         
         <div class="card">
             <div class="card-img">
@@ -253,7 +256,7 @@
 <!-- Footer -->
 <footer>
     <div class="footer-container">
-        <div class="footer-logo"><img alt="RYAN" src="./resource/logo/footer Logo.jpg"></div>
+        <div class="footer-logo"><img alt="RYAN" src="./resource/logo/Footer Logo.jpg"></div>
         <nav>
             <ul class="nav-list">
                 <li class="nav-item"><a href="#">Home</a></li>
