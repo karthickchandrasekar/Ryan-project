@@ -9,6 +9,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script defer src="Style.js"></script>
+<script  defer src="https://smtpjs.com/v3/smtp.js">
+</script>
+
 </head>
 </head>
 <body>
@@ -16,8 +19,11 @@
 <header>
 <div class="header-container">
     <div class="header-logo"><img alt="RYAN" src="./resource/logo/Header Logo.jpg"></div>
+    <div class="menu"><i id="bars" class="fa fa-bars"></i>
+    <i id="close" class="fa fa-close"></i>
+    </div>
     <nav>
-        <ul class="nav-list">
+        <ul class="nav-list" id="menu-item">
             <li class="nav-item"><a href="#">Home</a></li>
             <li class="nav-item"><a href="#Projects">Projects</a></li>
             <li class="nav-item"><a href="#About">About</a></li>
@@ -236,7 +242,7 @@
         </p>
     </div>
     <div class="contact-form">
-        <form>
+        <form id="form">
             <div >
             <label for="name">your name</label><br>
             <input type="text" id="name" name="name" >
@@ -247,7 +253,7 @@
             </div>
             
             <label for="idea">Tell me little more what you are looking for</label><br>
-            <input type="text" id="idea" name="idea"><br><br>
+            <input type="textarea" id="idea" name="idea"><br><br>
             <input type="submit" value="Submit">
           </form>
     </div>

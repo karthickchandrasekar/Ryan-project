@@ -17,7 +17,7 @@ html,body{
 .container{
     margin: 3% 10px;
     display:grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 50%;
 }
 
 .center{
@@ -39,11 +39,20 @@ header{
     grid-template-columns: 1fr 1fr;
     padding-top: 1em;
 }
-
+.menu{
+    display:grid;
+    justify-content: end;
+    margin-right:15px;
+    font-size: 28px;
+}
+#bars,#close{
+    display:none;
+}
 .nav-list{
     display:grid;
     grid-template-columns: repeat(5,1fr);
     column-gap: 2px;
+    
     
 }
 .nav-item{
@@ -289,4 +298,77 @@ input[name=idea]{
 .socialmedia li{
     list-style: none;
     padding: 0 15px;
+}
+
+
+@media only screen and (max-width: 600px) {
+.Home-text{
+    font-size:6px;
+}
+.download-cv{
+    padding:3px;
+    font-size: 6px;
+
+}
+.container{
+   margin:0 2px; 
+}
+.nav-list{
+    grid-template-columns: 1fr;
+    align-items: center;
+    grid-template-rows: repeat(5,1fr);
+    
+}
+.home-divider h1{
+    font-size: 14px;
+}
+.home-divider h3{
+    font-size: 6px;
+}
+.about{
+    grid-template-columns: auto;
+}
+.contact{
+    grid-template-columns: auto;
+}
+.slider i{
+    font-size:14px;
+}
+.image-slider img{
+   width:60px; 
+}
+.card{
+    width:150px;
+    flex:1 0 150px;
+}
+p{
+    font-size:10px;
+}
+h3{
+    font-size:14px;
+}
+h2{
+    font-size:16px;
+}
+.slider-arrow i{
+    font-size:10px;
+}
+.card-link i{
+    font-size:8px;
+}
+.about-text p{
+    font-size: 10px;
+}
+.nav-list{
+    display:none;
+    transition:0.5s;
+}
+#bars{
+    display:block;
+}
+.nav-item{
+    transition:0.5s;
+    justify-content: end;
+    padding: 50px 0;
+}
 }
