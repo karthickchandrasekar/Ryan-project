@@ -56,7 +56,7 @@ header{
     grid-template-columns: repeat(5,1fr);
     column-gap: 2px;
     
-    
+}   
 .nav-item{
     list-style: none;
     display:grid;
