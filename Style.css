@@ -31,6 +31,7 @@ html,body{
 header{
     position:sticky;
     top:0;
+    left:0;
     background-color: #ffffff;
     z-index: 10;
 }
@@ -66,10 +67,10 @@ header{
     display:grid;
     justify-content: center;   
 }
-.nav-item a:hover,
-.nav-item a:active{
+.nav-item a:hover{
     border-bottom: 3px solid #FF2E63;
 }
+
 
 .Home-text{
     margin:auto 2em;
@@ -137,7 +138,7 @@ header{
 }
 .card-details{
     width:80%;
-    margin:auto;
+    margin:8px auto;
 }
 
 .card-title{
@@ -277,7 +278,7 @@ input[type=submit]{
 }
 input[name=idea]{
     width:90%;
-    height:40px;
+    height:100px;
 
 }
 /*Footer*/
@@ -315,6 +316,10 @@ input[name=idea]{
     padding:3px;
     font-size: 6px;
 
+}
+.animate{
+    width:100px;
+    
 }
 .menu{
     display:block;
@@ -381,6 +386,6 @@ h2{
 .nav-item{
     transition:0.5s;
     justify-content: end;
-    padding: 50px 0;
+    margin-top: 50px;
 }
 }

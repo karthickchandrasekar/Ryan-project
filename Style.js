@@ -42,6 +42,7 @@ form.addEventListener("submit",(e)=>{
   const email=document.getElementById("email").value;
   const name=document.getElementById("name").value;
   const idea=document.getElementById("idea").value;
+  document.getElementById("form").reset();
   const body= "name :"+name+"<br>"+"email :"+email+"<br>"+"idea :"+idea;
   Email.send({
     //SecureToken:"e98a6df6-3657-4c1d-8006-926c65caeb44",
@@ -68,12 +69,27 @@ bars.addEventListener("click",()=>{
    close.style.justifyContent="end";
    bars.style.display="none";
    menu.style.width="auto";
-   menu.style.height="120vh";
+   menu.style.height="88vh";
 });
 
 close.addEventListener("click",()=>{
 
     menu.style.display="none";
    close.style.display="none";
-   bars.style.display="block";
+   bars.style.display="grid";
+   bars.style.justifyContent="end";
 });
+//document.addEventListener("mousemove",(w)=>{console.log(w.clientX)})
+
+
+const download=document.querySelector(".download-cv");
+download.addEventListener("click",(e)=>{
+    url="./resource/Style Guide.pdf"
+    const a = document.createElement('a')
+    a.href = url
+    a.download = url.split('/').pop()
+    document.body.appendChild(a)
+    a.click()
+    document.body.removeChild(a)
+  
+})
