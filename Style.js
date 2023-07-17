@@ -79,7 +79,7 @@ close.addEventListener("click",()=>{
    bars.style.display="grid";
    bars.style.justifyContent="end";
 });
-//document.addEventListener("mousemove",(w)=>{console.log(w.clientX)})
+
 
 
 const download=document.querySelector(".download-cv");
