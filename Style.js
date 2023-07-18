@@ -13,14 +13,12 @@ btn.forEach(bt=>{
 });
 });
 
-
+// slider function where we implement scroll function on button click
 const sliderbtn=document.querySelectorAll(".slider-arrow i");
 const cardwidth=document.querySelector(".card").offsetWidth;
 const cardslider=document.querySelectorAll(".card-slider");
 sliderbtn.forEach(arrow=>{
     arrow.addEventListener("click",()=>{
-        //console.log(arrow);
-        //console.log(arrow.getAttribute("data-action"));
         cardslider.forEach(slid=>{
             if(slid.getAttribute("data-target")==arrow.getAttribute("data-slider")){
                 if(arrow.getAttribute("data-action")=="left"){
@@ -34,6 +32,8 @@ sliderbtn.forEach(arrow=>{
 
     })
 })
+
+//form submittion for email or contact functionality
 const form=document.querySelector("form");
 
 form.addEventListener("submit",(e)=>{
@@ -54,11 +54,12 @@ form.addEventListener("submit",(e)=>{
     Subject : "mail from portfolio",
     Body : "Thanks for your Mail,response will sent with in 48 hours. <br>" + body
 }).then(
-  message => alert(message)
+  message => alert(message + " your form is submitted.")
 );
 
 })
 
+// for dyanamic menu implementation 
 const bars=document.getElementById("bars");
 const close= document.getElementById("close");
 const menu=document.getElementById("menu-item");
@@ -81,7 +82,7 @@ close.addEventListener("click",()=>{
 });
 
 
-
+// download functionality
 const download=document.querySelector(".download-cv");
 download.addEventListener("click",(e)=>{
     url="./resource/Style Guide.pdf"
