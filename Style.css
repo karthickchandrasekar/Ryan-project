@@ -1,8 +1,9 @@
+/************************ general  **************************/
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
-    line-height: 1.2em;
+    line-height: 1.5em;
     white-space:revert;
     font-family: 'Lato', sans-serif;
 }
@@ -29,13 +30,14 @@ html,body{
 .container-card{
     margin:3% 6%;
 }
+/********************** header **********************/
 header{
     position:sticky;
     top:0;
     left:0;
     background-color: #ffffff;
     z-index: 10;
-    
+    border-bottom: 1px solid #606060;
 }
 .header-container{
     display:grid;
@@ -73,7 +75,7 @@ header{
     border-bottom: 3px solid #FF2E63;
 }
 
-
+/********************* home ************************/
 .Home-text{
     margin:auto 2em;
     color:#606060;
@@ -132,7 +134,7 @@ header{
 .divider-item:last-child{
     border-right:0px;
 }
-/*blog*/
+/************************blog**********************************/
 .card-img img{
     width:100%;
     border-top-left-radius: 5px;
@@ -197,7 +199,7 @@ header{
     display:none;
 }
 
-/*About*/
+/************************** About **********************************/
 
 .about-text{
     margin: auto 10%;
@@ -257,26 +259,16 @@ padding-top: 5px;
     cursor:pointer;
 }
 .image-slider{
-    flex-wrap: nowrap;
-    
+    flex-wrap: nowrap;    
 }
-@keyframes slide {
-    0%{
-        translate:0;
-    }
-    100% { 
-        
-        translate:-500px;
-      }
-  }
 
 .image-slider img{
     width:100px;
     aspect-ratio: 1;
     margin:10px 20px;
-    animation: slide 30s linear infinite;
+
 }
-/*contact*/
+/****************************contact*********************************/
 .contact-text{
     margin:auto 10%;
 }
@@ -312,7 +304,7 @@ input[name=idea]{
     height:100px;
 
 }
-/*Footer*/
+/*****************************Footer********************************/
 .footer-container{
     background-color: #000;
     display:grid;
@@ -329,8 +321,7 @@ input[name=idea]{
     display: flex;
     flex-direction: row;
     color:#606060;
-    width:100%;
-    
+    width:100%;  
     
 }
 .socialmedia li{
@@ -338,7 +329,7 @@ input[name=idea]{
     padding: 0 15px;
 }
 
-
+/************************** responsive *******************/
 @media only screen and (max-width: 600px) {
 .Home-text{
     font-size:6px;
@@ -366,10 +357,10 @@ input[name=idea]{
     
 }
 .home-divider h1{
-    font-size: 14px;
+    font-size: 18px;
 }
 .home-divider h3{
-    font-size: 6px;
+    font-size: 8px;
 }
 .about{
     grid-template-columns: auto;
@@ -391,7 +382,7 @@ p{
     font-size:10px;
 }
 h3{
-    font-size:14px;
+    font-size:12px;
 }
 h2{
     font-size:16px;
@@ -418,5 +409,8 @@ h2{
     transition:0.5s;
     justify-content: end;
     margin-top: 50px;
+}
+.contact-form{
+    margin:auto 10%;
 }
 }

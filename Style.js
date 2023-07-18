@@ -1,3 +1,4 @@
+// General slider for image
 const btn=document.querySelectorAll(".slider i");
 const slider=document.querySelector(".image-slider");
 const img=document.querySelector(".image-slider img");
@@ -10,12 +11,11 @@ btn.forEach(bt=>{
     }
     else{
         slider.scrollLeft+=img.offsetWidth;
-
     }
 });
 });
 
-// slider function where we implement scroll function on button click
+// Attribute slider for cards which works on any elements
 const sliderbtn=document.querySelectorAll(".slider-arrow i");
 const cardwidth=document.querySelector(".card").offsetWidth;
 const cardslider=document.querySelectorAll(".card-slider");
@@ -30,12 +30,12 @@ sliderbtn.forEach(arrow=>{
                     slid.scrollLeft+=cardwidth;
                 }
             }
-        })
+        });
 
-    })
-})
+    });
+});
 
-//form submittion for email or contact functionality
+//form using smtp function
 const form=document.querySelector("form");
 
 form.addEventListener("submit",(e)=>{
@@ -59,9 +59,9 @@ form.addEventListener("submit",(e)=>{
   message => alert(message + " your form is submitted.")
 );
 
-})
+});
 
-// for dyanamic menu implementation 
+// menu bar for navigation
 const bars=document.getElementById("bars");
 const close= document.getElementById("close");
 const menu=document.getElementById("menu-item");
@@ -84,7 +84,7 @@ close.addEventListener("click",()=>{
 });
 
 
-// download functionality
+// download function
 const download=document.querySelector(".download-cv");
 download.addEventListener("click",(e)=>{
     url="./resource/Style Guide.pdf"
@@ -97,7 +97,7 @@ download.addEventListener("click",(e)=>{
   
 })
 
-//nav
+// active link function
 
 const nav=document.querySelectorAll(".nav-item");
 nav.forEach(item=>{
