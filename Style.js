@@ -47,10 +47,7 @@ form.addEventListener("submit",(e)=>{
   document.getElementById("form").reset();
   const body= "name :"+name+"<br>"+"email :"+email+"<br>"+"idea :"+idea;
   Email.send({
-    //SecureToken:"e98a6df6-3657-4c1d-8006-926c65caeb44",
-   Host : "smtp.elasticemail.com",
-  Username : "t85088657@gmail.com",
-  Password : "199C7A3FCC0726871349BCFD4298936AF122",
+    SecureToken : "9c9fb57c-bc56-47d4-a3ef-dae9d3745898",
     To : email,
     From : "t85088657@gmail.com",
     Subject : "mail from portfolio",
@@ -77,7 +74,7 @@ bars.addEventListener("click",()=>{
 
 close.addEventListener("click",()=>{
 
-    menu.style.display="none";
+   menu.style.display="none";
    close.style.display="none";
    bars.style.display="grid";
    bars.style.justifyContent="end";

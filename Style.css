@@ -400,6 +400,8 @@ h2{
     display:none;
     transition:0.5s;
 }
+
+
 #bars{
     display:grid;
     justify-content: end;
