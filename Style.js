@@ -1,14 +1,16 @@
 const btn=document.querySelectorAll(".slider i");
 const slider=document.querySelector(".image-slider");
 const img=document.querySelector(".image-slider img");
-console.log(img.offsetWidth);
+
 btn.forEach(bt=>{
     bt.addEventListener("click",()=>{
     if(bt.id=="left"){
     slider.scrollLeft-=img.offsetWidth;
+
     }
     else{
         slider.scrollLeft+=img.offsetWidth;
+
     }
 });
 });
@@ -93,4 +95,24 @@ download.addEventListener("click",(e)=>{
     a.click()
     document.body.removeChild(a)
   
+})
+
+//nav
+
+const nav=document.querySelectorAll(".nav-item");
+nav.forEach(item=>{
+    item.addEventListener("click",(n)=>{
+        if(screen.width <= 600){
+        close.click();
+    }
+    n.preventDefault();
+    const id=document.querySelector(n.target.getAttribute("href"));
+        document.querySelector(".active").className="nav-item";
+        n.currentTarget.className="nav-item active";
+        var bodyRect = document.body.getBoundingClientRect(),
+      elemRect = id.getBoundingClientRect(),
+      offset = elemRect.top - bodyRect.top-80;
+        console.log(offset);
+        window.scrollTo(0,offset);
+    })
 })
