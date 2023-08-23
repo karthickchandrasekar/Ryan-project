@@ -358,6 +358,7 @@ input[name=idea]{
 }
 .home-divider h1{
     font-size: 18px;
+    
 }
 .home-divider h3{
     font-size: 8px;
@@ -377,6 +378,9 @@ input[name=idea]{
 .card{
     width:150px;
     flex:1 0 150px;
+}
+h1{
+    font-size: 12px;
 }
 p{
     font-size:10px;

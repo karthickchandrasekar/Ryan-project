@@ -84,7 +84,7 @@ close.addEventListener("click",()=>{
 // download function
 const download=document.querySelector(".download-cv");
 download.addEventListener("click",(e)=>{
-    url="./resource/Style Guide.pdf"
+    url="./resource/Design file.jpg"
     const a = document.createElement('a')
     a.href = url
     a.download = url.split('/').pop()
